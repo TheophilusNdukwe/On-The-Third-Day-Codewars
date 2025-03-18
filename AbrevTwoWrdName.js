@@ -4,7 +4,7 @@ function abbrevName(name){
   let arr = name.split(" ")//be sure to put separate the quotes with a space
     // makes the items in array uppercase
     // then takes the first letter of each index 
-  return `${arr[0].charAt(0).toUppercase()}.${arr[1].charAt(0).toUppercase()}`
+  return `${arr[0].charAt(0).toUppercase()}.${arr[1].charAt(0).toUppercase()}`//template literals
 
 
 }
