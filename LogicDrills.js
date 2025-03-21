@@ -1,6 +1,5 @@
 function updateLight(current) {
-  
-    //your code here!
+  //Conditionals
     if (current === 'green'){
       return 'yellow'
     }
