@@ -25,3 +25,17 @@ function isIsogram(str){
 //Ex: "dermatoglyphics" --> true "no letters repeating"
 //Ex: "ada" --> false  "repeating"
 //Ex: "moOse" --> false  "o" repeating
+
+function isIsogram(str){
+ // Handle empty string case
+  if (!str) return true;
+  
+  // Convert to lowercase and potentially filter for just letters
+  const processedStr = str.toLowerCase();
+  
+  // Create a Set from the string - Sets only store unique values
+  let set = new Set(processedStr)
+  // If the Set's size equals the string length, no repeats exist
+  return true ? set.size === processedStr.length : false
+}
+
