@@ -22,3 +22,7 @@ function grow(x){
 }
 // ex: [1,2,3,4] --> 1 * 2 * 3 * 4 = 24
 // ex: [4, 1, 1, 1, 4] --> 4 * 1 * 1 * 1 * 4 --> 16
+
+function grow(x) {
+  return x.reduce((a, c) => a * c, 0 + 1)
+}
